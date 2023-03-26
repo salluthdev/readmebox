@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>ReadmeBox | Make Your Github Cool with SVG Boxes</title>
+        <title>ReadmeBox - Make Your Github Cool with SVG Boxes</title>
         <meta
           name="description"
           content="Make Your Github Cool with SVG Boxes"
@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1>Hello ReadmeBox</h1>
+        <h1 className="font-bold text-2xl text-stone-800">Hello ReadmeBox</h1>
       </main>
     </>
   );
