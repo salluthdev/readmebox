@@ -1,6 +1,9 @@
 import Head from "next/head";
+import { useState } from "react";
 
 export default function Home() {
+  const [text, setText] = useState("");
+
   return (
     <>
       <Head>
@@ -15,6 +18,13 @@ export default function Home() {
       <main className="wrapper">
         <div className="min-h-[90vh] py-4">
           <h1 className="font-bold text-[28px] text-white">ReadmeBox</h1>
+          <input
+            type="text"
+            placeholder="YOUR TEXT"
+            value={text.toUpperCase()}
+            onChange={(e) => setText(e.target.value)}
+            className="w-full font-bold rounded-sm outline-none p-2 mt-1"
+          />
         </div>
       </main>
     </>
