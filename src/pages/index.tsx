@@ -1,21 +1,9 @@
-import { A, B } from "@/components";
+import { Result } from "@/components";
 import Head from "next/head";
-import React, { useState } from "react";
-
-interface charType {
-  [key: string]: JSX.Element;
-}
-
-const char: charType = {
-  A: <A />,
-  B: <B />,
-};
+import { useState } from "react";
 
 export default function Home() {
-  const [text, setText] = useState("");
-  const charToRender = Array.from(text).map((c, index) => (
-    <React.Fragment key={index}>{char[c]}</React.Fragment>
-  ));
+  const [text, setText] = useState<string>("");
 
   return (
     <>
@@ -38,7 +26,7 @@ export default function Home() {
             onChange={(e) => setText(e.target.value.toUpperCase())}
             className="w-full font-bold rounded-sm outline-none p-2 mt-1"
           />
-          <div className="font-bold text-lg text-white">{charToRender}</div>
+          <Result text={text} />
         </div>
       </main>
     </>
