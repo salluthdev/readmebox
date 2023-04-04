@@ -1,8 +1,19 @@
+import { A, B } from "@/components";
 import Head from "next/head";
 import { useState } from "react";
 
+interface charType {
+  [key: string]: JSX.Element;
+}
+
+const char: charType = {
+  A: <A />,
+  B: <B />,
+};
+
 export default function Home() {
   const [text, setText] = useState("");
+  const charToRender = Array.from(text).map((c) => char[c]);
 
   return (
     <>
@@ -25,7 +36,7 @@ export default function Home() {
             onChange={(e) => setText(e.target.value.toUpperCase())}
             className="w-full font-bold rounded-sm outline-none p-2 mt-1"
           />
-          <p className="text-white">{text}</p>
+          <div className="font-bold text-lg text-white">{charToRender}</div>
         </div>
       </main>
     </>
