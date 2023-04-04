@@ -21,10 +21,11 @@ export default function Home() {
           <input
             type="text"
             placeholder="YOUR TEXT"
-            value={text.toUpperCase()}
-            onChange={(e) => setText(e.target.value)}
+            value={text}
+            onChange={(e) => setText(e.target.value.toUpperCase())}
             className="w-full font-bold rounded-sm outline-none p-2 mt-1"
           />
+          <p className="text-white">{text}</p>
         </div>
       </main>
     </>
