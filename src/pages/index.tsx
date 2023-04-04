@@ -1,6 +1,6 @@
 import { A, B } from "@/components";
 import Head from "next/head";
-import { useState } from "react";
+import React, { useState } from "react";
 
 interface charType {
   [key: string]: JSX.Element;
@@ -13,7 +13,9 @@ const char: charType = {
 
 export default function Home() {
   const [text, setText] = useState("");
-  const charToRender = Array.from(text).map((c) => char[c]);
+  const charToRender = Array.from(text).map((c, index) => (
+    <React.Fragment key={index}>{char[c]}</React.Fragment>
+  ));
 
   return (
     <>
