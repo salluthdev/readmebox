@@ -1,4 +1,4 @@
-import { Result } from "@/components";
+import { Result, SearchInput } from "@/components";
 import Head from "next/head";
 import { useState } from "react";
 
@@ -19,13 +19,7 @@ export default function Home() {
       <main className="wrapper">
         <div className="min-h-[90vh] py-4">
           <h1 className="font-bold text-[28px] text-white">ReadmeBox</h1>
-          <input
-            type="text"
-            placeholder="YOUR TEXT"
-            value={text}
-            onChange={(e) => setText(e.target.value.toUpperCase())}
-            className="w-full font-bold rounded-sm outline-none p-2 mt-1"
-          />
+          <SearchInput text={text} setText={setText} />
           <Result text={text} />
         </div>
       </main>
