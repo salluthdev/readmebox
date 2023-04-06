@@ -26,9 +26,8 @@ export default function Result({ text }: ResultProps) {
     <div className="flex justify-end">
       <svg
         fill="none"
-        viewBox="0 0 240 120"
-        width="240"
-        height="120"
+        viewBox="0 0 480 240"
+        width="480"
         xmlns="http://www.w3.org/2000/svg"
       >
         <foreignObject
@@ -36,7 +35,7 @@ export default function Result({ text }: ResultProps) {
           height="100%"
           xmlns="http://www.w3.org/1999/xhtml"
         >
-          <div className="h-full flex flex-wrap justify-center items-center">
+          <div className="h-full flex flex-wrap justify-center items-center bg-[#0d1117] rounded p-[3px]">
             <div className="font-bold text-lg text-center break-all text-white">
               {charToRender}
             </div>
