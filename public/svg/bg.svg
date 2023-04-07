@@ -3,7 +3,6 @@
 		<div xmlns="http://www.w3.org/1999/xhtml">
 			<style>
 				.container {
-					width: 837px;
 					display: flex;
 					flex-direction: column;
 					gap: 3px;
