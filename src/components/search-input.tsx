@@ -5,12 +5,19 @@ interface SearchInputProps {
 
 export default function SearchInput({ text, setText }: SearchInputProps) {
   return (
-    <input
-      type="text"
-      placeholder="YOUR TEXT"
-      value={text}
-      onChange={(e) => setText(e.target.value.toUpperCase())}
-      className="w-full h-10 font-bold rounded-sm outline-none py-1 px-2 mt-1"
-    />
+    <div className="flex items-center gap-2">
+      <input
+        type="text"
+        placeholder="FIRST TEXT"
+        value={text}
+        onChange={(e) => setText(e.target.value.toUpperCase())}
+        className="w-full h-10 font-bold rounded-sm outline-none py-1 px-2 mt-1"
+      />
+      <input
+        type="text"
+        placeholder="SECOND TEXT"
+        className="w-full h-10 font-bold rounded-sm outline-none py-1 px-2 mt-1"
+      />
+    </div>
   );
 }
