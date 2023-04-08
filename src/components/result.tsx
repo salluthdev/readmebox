@@ -82,13 +82,12 @@ export default function Result({ text }: ResultProps) {
                 border-radius: 2px;
               }
               .content {
+                width: 100%;
                 height: 100%;
                 position: relative;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-weight: bold;
-                color: white;
                 z-index: 1;
               }
               `}
