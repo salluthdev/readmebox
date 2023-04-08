@@ -1,29 +1,52 @@
 export default function A() {
+  const dotStyle = {
+    width: "11px",
+    height: "11px",
+    backgroundColor: "#3aad52",
+    borderRadius: "2px",
+  };
+
+  const emptyDotStyle = {
+    width: "11px",
+    height: "11px",
+  };
+
+  const dotRowStyle = {
+    display: "flex",
+    gap: "3px",
+  };
+
+  const dotContainerStyle = {
+    display: "flex",
+    flexDirection: "column",
+    gap: "3px",
+  };
+
   return (
-    <div className="flex flex-col gap-[3px]">
-      <div className="flex gap-[3px]">
-        <span className="w-[11px] h-[11px] bg-[#3aad52] rounded-sm" />
-        <span className="w-[11px] h-[11px] bg-[#3aad52] rounded-sm" />
-        <span className="w-[11px] h-[11px] bg-[#3aad52] rounded-sm" />
-        <span className="w-[11px] h-[11px]" />
+    <div style={dotContainerStyle}>
+      <div style={dotRowStyle}>
+        <span style={dotStyle}></span>
+        <span style={dotStyle}></span>
+        <span style={dotStyle}></span>
+        <span style={emptyDotStyle}></span>
       </div>
-      <div className="flex gap-[3px]">
-        <span className="w-[11px] h-[11px] bg-[#3aad52] rounded-sm" />
-        <span className="w-[11px] h-[11px]" />
-        <span className="w-[11px] h-[11px] bg-[#3aad52] rounded-sm" />
-        <span className="w-[11px] h-[11px]" />
+      <div style={dotRowStyle}>
+        <span style={dotStyle}></span>
+        <span style={emptyDotStyle}></span>
+        <span style={dotStyle}></span>
+        <span style={emptyDotStyle}></span>
       </div>
-      <div className="flex gap-[3px]">
-        <span className="w-[11px] h-[11px] bg-[#3aad52] rounded-sm" />
-        <span className="w-[11px] h-[11px] bg-[#3aad52] rounded-sm" />
-        <span className="w-[11px] h-[11px] bg-[#3aad52] rounded-sm" />
-        <span className="w-[11px] h-[11px]" />
+      <div style={dotRowStyle}>
+        <span style={dotStyle}></span>
+        <span style={dotStyle}></span>
+        <span style={dotStyle}></span>
+        <span style={emptyDotStyle}></span>
       </div>
-      <div className="flex gap-[3px]">
-        <span className="w-[11px] h-[11px] bg-[#3aad52] rounded-sm" />
-        <span className="w-[11px] h-[11px]" />
-        <span className="w-[11px] h-[11px] bg-[#3aad52] rounded-sm" />
-        <span className="w-[11px] h-[11px]" />
+      <div style={dotRowStyle}>
+        <span style={dotStyle}></span>
+        <span style={emptyDotStyle}></span>
+        <span style={dotStyle}></span>
+        <span style={emptyDotStyle}></span>
       </div>
     </div>
   );
