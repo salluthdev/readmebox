@@ -81,14 +81,6 @@ export default function A() {
         <span style={box} />
         <span style={emptyBox} />
       </div>
-      <div style={line}>
-        <span style={box} />
-        <span style={box} />
-        <span style={emptyBox} />
-        <span style={box} />
-        <span style={box} />
-        <span style={emptyBox} />
-      </div>
     </div>
   );
 }
