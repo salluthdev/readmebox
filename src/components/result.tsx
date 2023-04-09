@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { A, B, S } from "./char";
+import { A, B, L, S } from "./char";
 
 interface ResultProps {
   text: string;
@@ -12,6 +12,7 @@ interface charType {
 const char: charType = {
   A: <A />,
   B: <B />,
+  L: <L />,
   S: <S />,
 };
 

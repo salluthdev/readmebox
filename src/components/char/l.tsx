@@ -2,7 +2,7 @@ import { CSSProperties } from "react";
 
 type FlexDirection = "row" | "row-reverse" | "column" | "column-reverse";
 
-export default function S() {
+export default function L() {
   const charContainer: CSSProperties & { flexDirection: FlexDirection } = {
     display: "flex",
     flexDirection: "column",
@@ -26,7 +26,48 @@ export default function S() {
   return (
     <div style={charContainer}>
       <div style={line}>
+        <span style={box} />
+        <span style={box} />
         <span style={emptyBox} />
+        <span style={emptyBox} />
+        <span style={emptyBox} />
+      </div>
+      <div style={line}>
+        <span style={box} />
+        <span style={box} />
+        <span style={emptyBox} />
+        <span style={emptyBox} />
+        <span style={emptyBox} />
+      </div>
+      <div style={line}>
+        <span style={box} />
+        <span style={box} />
+        <span style={emptyBox} />
+        <span style={emptyBox} />
+        <span style={emptyBox} />
+      </div>
+      <div style={line}>
+        <span style={box} />
+        <span style={box} />
+        <span style={emptyBox} />
+        <span style={emptyBox} />
+        <span style={emptyBox} />
+      </div>
+      <div style={line}>
+        <span style={box} />
+        <span style={box} />
+        <span style={emptyBox} />
+        <span style={emptyBox} />
+        <span style={emptyBox} />
+      </div>
+      <div style={line}>
+        <span style={box} />
+        <span style={box} />
+        <span style={emptyBox} />
+        <span style={emptyBox} />
+        <span style={emptyBox} />
+      </div>
+      <div style={line}>
         <span style={box} />
         <span style={box} />
         <span style={box} />
@@ -38,55 +79,6 @@ export default function S() {
         <span style={box} />
         <span style={box} />
         <span style={box} />
-        <span style={box} />
-        <span style={emptyBox} />
-      </div>
-      <div style={line}>
-        <span style={box} />
-        <span style={box} />
-        <span style={emptyBox} />
-        <span style={emptyBox} />
-        <span style={emptyBox} />
-        <span style={emptyBox} />
-      </div>
-      <div style={line}>
-        <span style={box} />
-        <span style={box} />
-        <span style={box} />
-        <span style={box} />
-        <span style={emptyBox} />
-        <span style={emptyBox} />
-      </div>
-      <div style={line}>
-        <span style={emptyBox} />
-        <span style={box} />
-        <span style={box} />
-        <span style={box} />
-        <span style={box} />
-        <span style={emptyBox} />
-      </div>
-      <div style={line}>
-        <span style={emptyBox} />
-        <span style={emptyBox} />
-        <span style={emptyBox} />
-        <span style={box} />
-        <span style={box} />
-        <span style={emptyBox} />
-      </div>
-      <div style={line}>
-        <span style={box} />
-        <span style={box} />
-        <span style={box} />
-        <span style={box} />
-        <span style={box} />
-        <span style={emptyBox} />
-      </div>
-      <div style={line}>
-        <span style={box} />
-        <span style={box} />
-        <span style={box} />
-        <span style={box} />
-        <span style={emptyBox} />
         <span style={emptyBox} />
       </div>
     </div>
