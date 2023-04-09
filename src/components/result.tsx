@@ -88,6 +88,7 @@ export default function Result({ text }: ResultProps) {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                gap: 3px;
                 z-index: 1;
               }
               `}
