@@ -1,52 +1,53 @@
+import { CSSProperties } from "react";
+
+type FlexDirection = "row" | "row-reverse" | "column" | "column-reverse";
+
 export default function A() {
-  const dotStyle = {
-    width: "11px",
-    height: "11px",
-    backgroundColor: "#3aad52",
-    borderRadius: "2px",
-  };
-
-  const emptyDotStyle = {
-    width: "11px",
-    height: "11px",
-  };
-
-  const dotRowStyle = {
-    display: "flex",
-    gap: "3px",
-  };
-
-  const dotContainerStyle = {
+  const charContainer: CSSProperties & { flexDirection: FlexDirection } = {
     display: "flex",
     flexDirection: "column",
     gap: "3px",
   };
+  const line = {
+    display: "flex",
+    gap: "3px",
+  };
+  const box = {
+    width: "11px",
+    height: "11px",
+    background: "#3aad52",
+    borderRadius: "2px",
+  };
+  const emptyBox = {
+    width: "11px",
+    height: "11px",
+  };
 
   return (
-    <div style={dotContainerStyle}>
-      <div style={dotRowStyle}>
-        <span style={dotStyle}></span>
-        <span style={dotStyle}></span>
-        <span style={dotStyle}></span>
-        <span style={emptyDotStyle}></span>
+    <div style={charContainer}>
+      <div style={line}>
+        <span style={box}></span>
+        <span style={box}></span>
+        <span style={box}></span>
+        <span style={emptyBox}></span>
       </div>
-      <div style={dotRowStyle}>
-        <span style={dotStyle}></span>
-        <span style={emptyDotStyle}></span>
-        <span style={dotStyle}></span>
-        <span style={emptyDotStyle}></span>
+      <div style={line}>
+        <span style={box}></span>
+        <span style={emptyBox}></span>
+        <span style={box}></span>
+        <span style={emptyBox}></span>
       </div>
-      <div style={dotRowStyle}>
-        <span style={dotStyle}></span>
-        <span style={dotStyle}></span>
-        <span style={dotStyle}></span>
-        <span style={emptyDotStyle}></span>
+      <div style={line}>
+        <span style={box}></span>
+        <span style={box}></span>
+        <span style={box}></span>
+        <span style={emptyBox}></span>
       </div>
-      <div style={dotRowStyle}>
-        <span style={dotStyle}></span>
-        <span style={emptyDotStyle}></span>
-        <span style={dotStyle}></span>
-        <span style={emptyDotStyle}></span>
+      <div style={line}>
+        <span style={box}></span>
+        <span style={emptyBox}></span>
+        <span style={box}></span>
+        <span style={emptyBox}></span>
       </div>
     </div>
   );
