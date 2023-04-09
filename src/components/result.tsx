@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { A, B, H, L, S, T, U } from "./char";
+import { A, B, D, H, L, S, T, U } from "./char";
 
 interface ResultProps {
   text: string;
@@ -15,6 +15,7 @@ interface charType {
 const char: charType = {
   A: { component: <A />, width: 6 },
   B: { component: <B />, width: 6 },
+  D: { component: <D />, width: 6 },
   H: { component: <H />, width: 6 },
   L: { component: <L />, width: 5 },
   S: { component: <S />, width: 6 },
