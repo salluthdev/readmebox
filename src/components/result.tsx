@@ -19,12 +19,11 @@ const char: charType = {
   L: { component: <L />, width: 5 },
   S: { component: <S />, width: 6 },
   U: { component: <U />, width: 6 },
-  T: { component: <T />, width: 6 },
+  T: { component: <T />, width: 5 },
 };
 
 export default function Result({ text }: ResultProps) {
   const [textWidth, setTextWidth] = useState<number>(0);
-  console.log(textWidth);
 
   // render char component based on input value
   const charToRender = Array.from(text).map((c, index) => (
@@ -110,6 +109,9 @@ export default function Result({ text }: ResultProps) {
                 align-items: center;
                 gap: 3px;
                 z-index: 1;
+              }
+              .content .blank {
+                width: 11px;
               }
               `}
             </style>
@@ -1108,7 +1110,10 @@ export default function Result({ text }: ResultProps) {
                   <span />
                 </div>
               </div>
-              <div className="content">{charToRender}</div>
+              <div className="content">
+                {textWidth % 2 === 1 && <div className="blank" />}
+                {charToRender}
+              </div>
             </div>
           </foreignObject>
         </svg>
