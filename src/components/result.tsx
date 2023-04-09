@@ -1,31 +1,47 @@
-import React, { useRef } from "react";
-import { A, B, L, S, T, U } from "./char";
+import React, { useEffect, useRef, useState } from "react";
+import { A, B, H, L, S, T, U } from "./char";
 
 interface ResultProps {
   text: string;
 }
 
 interface charType {
-  [key: string]: JSX.Element;
+  [key: string]: {
+    component: JSX.Element;
+    width: number;
+  };
 }
 
 const char: charType = {
-  A: <A />,
-  B: <B />,
-  L: <L />,
-  S: <S />,
-  U: <U />,
-  T: <T />,
+  A: { component: <A />, width: 6 },
+  B: { component: <B />, width: 6 },
+  H: { component: <H />, width: 6 },
+  L: { component: <L />, width: 5 },
+  S: { component: <S />, width: 6 },
+  U: { component: <U />, width: 6 },
+  T: { component: <T />, width: 6 },
 };
 
 export default function Result({ text }: ResultProps) {
+  const [textWidth, setTextWidth] = useState<number>(0);
+  console.log(textWidth);
+
   // render char component based on input value
   const charToRender = Array.from(text).map((c, index) => (
     <React.Fragment key={index}>
-      {char[c]}
+      {char[c].component}
       {c === " " && <span>&nbsp;</span>}
     </React.Fragment>
   ));
+
+  // calc the total text width
+  useEffect(() => {
+    let width = 0;
+    Array.from(text).forEach((c) => {
+      width += char[c].width;
+    });
+    setTextWidth(width);
+  }, [text]);
 
   // download the svg box
   const svgRef = useRef<SVGSVGElement>(null);
