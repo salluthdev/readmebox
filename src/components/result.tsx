@@ -110,11 +110,19 @@ export default function Result({ text }: ResultProps) {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                gap: 3px;
                 z-index: 1;
-                animation: anim-content 4s infinite;
               }
-              @keyframes anim-content {
+              .content .blank {
+                width: 11px;
+              }
+              .content .slide-1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 3px;
+                animation: anim-slide-1 4s infinite;
+              }
+              @keyframes anim-slide-1 {
                 0%, 100% {
                   transform: scale(0.2) translateY(40px);
                 }
@@ -130,9 +138,6 @@ export default function Result({ text }: ResultProps) {
                 48%, 100% {
                   opacity: 0;
                 }
-              }
-              .content .blank {
-                width: 11px;
               }
               `}
             </style>
@@ -1133,7 +1138,7 @@ export default function Result({ text }: ResultProps) {
               </div>
               <div className="content">
                 {textWidth % 2 === 1 && <div className="blank" />}
-                {charToRender}
+                <div className="slide-1">{charToRender}</div>
               </div>
             </div>
           </foreignObject>
