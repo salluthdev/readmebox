@@ -112,6 +112,24 @@ export default function Result({ text }: ResultProps) {
                 align-items: center;
                 gap: 3px;
                 z-index: 1;
+                animation: anim-content 4s infinite;
+              }
+              @keyframes anim-content {
+                0%, 100% {
+                  transform: scale(0.2) translateY(40px);
+                }
+                10% {
+                  transform: scale(1);
+                }
+                12%, 40% {
+                  transform: scale(1) translateY(0);
+                }
+                44% {
+                  opacity: 1;
+                }
+                48%, 100% {
+                  opacity: 0;
+                }
               }
               .content .blank {
                 width: 11px;
