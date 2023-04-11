@@ -38,7 +38,7 @@ export default function Result({ textOne, textTwo }: ResultProps) {
     ));
   };
 
-  // calc the total text width
+  // calc the text width
   const calculateTextWidth = (text: string) => {
     return Array.from(text).reduce(
       (width, c) => width + (char[c]?.width || 0),
