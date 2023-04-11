@@ -157,6 +157,25 @@ export default function Result({ textOne, textTwo }: ResultProps) {
                   opacity: 0;
                 }
               }
+              .char-container {
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+              }
+              .char-container .line {
+                display: flex;
+                gap: 3px;
+              }
+              .char-container .line .box {
+                width: 11px;
+                height: 11px;
+                background: #3aad52;
+                border-radius: 2px;
+              }
+              .char-container .line .empty-box {
+                width: 11px;
+                height: 11px;
+              }
               `}
             </style>
             <div className="container">

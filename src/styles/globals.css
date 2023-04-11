@@ -16,3 +16,22 @@ body {
   padding: 0 16px;
   margin: 0 auto;
 }
+.char-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.char-container .line {
+  display: flex;
+  gap: 3px;
+}
+.char-container .line .box {
+  width: 11px;
+  height: 11px;
+  background: #3aad52;
+  border-radius: 2px;
+}
+.char-container .line .empty-box {
+  width: 11px;
+  height: 11px;
+}
