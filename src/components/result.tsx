@@ -34,7 +34,8 @@ const renderText = (text: string) => {
 };
 
 export default function Result({ textOne, textTwo }: ResultProps) {
-  const [textWidth, setTextWidth] = useState<number>(0);
+  const [textOneWidth, setTextOneWidth] = useState<number>(0);
+  const [textTwoWidth, setTextTwoWidth] = useState<number>(0);
 
   // calc the total text width
   useEffect(() => {
@@ -42,8 +43,16 @@ export default function Result({ textOne, textTwo }: ResultProps) {
     Array.from(textOne).forEach((c) => {
       width += char[c].width;
     });
-    setTextWidth(width);
+    setTextOneWidth(width);
   }, [textOne]);
+
+  useEffect(() => {
+    let width = 0;
+    Array.from(textTwo).forEach((c) => {
+      width += char[c].width;
+    });
+    setTextTwoWidth(width);
+  }, [textTwo]);
 
   // download the svg box
   const svgRef = useRef<SVGSVGElement>(null);
@@ -1147,9 +1156,14 @@ export default function Result({ textOne, textTwo }: ResultProps) {
                 </div>
               </div>
               <div className="content">
-                {textWidth % 2 === 1 && <div className="blank" />}
-                <div className="slide slide-1">{renderText(textOne)}</div>
-                <div className="slide slide-2">{renderText(textTwo)}</div>
+                <div className="slide slide-1">
+                  {textOneWidth % 2 === 1 && <div className="blank" />}
+                  {renderText(textOne)}
+                </div>
+                <div className="slide slide-2">
+                  {textTwoWidth % 2 === 1 && <div className="blank" />}
+                  {renderText(textTwo)}
+                </div>
               </div>
             </div>
           </foreignObject>
