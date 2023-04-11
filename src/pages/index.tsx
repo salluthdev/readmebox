@@ -21,7 +21,12 @@ export default function Home() {
         <div className="min-h-[90vh] py-4">
           <h1 className="font-bold text-[28px] text-white">ReadmeBox</h1>
           <div className="flex flex-col gap-2">
-            <SearchInput textOne={textOne} setTextOne={setTextOne} />
+            <SearchInput
+              textOne={textOne}
+              setTextOne={setTextOne}
+              textTwo={textTwo}
+              setTextTwo={setTextTwo}
+            />
             <Result textOne={textOne} />
           </div>
         </div>
