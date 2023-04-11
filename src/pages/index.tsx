@@ -27,7 +27,7 @@ export default function Home() {
               textTwo={textTwo}
               setTextTwo={setTextTwo}
             />
-            <Result textOne={textOne} />
+            <Result textOne={textOne} textTwo={textTwo} />
           </div>
         </div>
       </main>

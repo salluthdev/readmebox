@@ -3,6 +3,7 @@ import { A, B, D, E, H, L, S, T, U, V } from "./char";
 
 interface ResultProps {
   textOne: string;
+  textTwo: string;
 }
 
 interface charType {
@@ -25,16 +26,15 @@ const char: charType = {
   V: { component: <V />, width: 7 },
 };
 
-export default function Result({ textOne }: ResultProps) {
-  const [textWidth, setTextWidth] = useState<number>(0);
-
-  // render char component based on input value
-  const charToRender = Array.from(textOne).map((c, index) => (
-    <React.Fragment key={index}>
-      {char[c].component}
-      {c === " " && <span>&nbsp;</span>}
-    </React.Fragment>
+// render char component based on input value
+const renderText = (text: string) => {
+  return Array.from(text).map((c, index) => (
+    <React.Fragment key={index}>{char[c]?.component || c}</React.Fragment>
   ));
+};
+
+export default function Result({ textOne, textTwo }: ResultProps) {
+  const [textWidth, setTextWidth] = useState<number>(0);
 
   // calc the total text width
   useEffect(() => {
@@ -115,14 +115,24 @@ export default function Result({ textOne }: ResultProps) {
               .content .blank {
                 width: 11px;
               }
-              .content .slide-1 {
+              .content .slide {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 gap: 3px;
-                animation: anim-slide-1 4s infinite;
               }
-              @keyframes anim-slide-1 {
+              .content .slide.slide-1 {
+                animation: anim-slide 4s infinite;
+              }
+              .content .slide.slide-2 {
+                animation: anim-slide 4s 2s infinite;
+              }
+              @keyframes anim-slide {
                 0%, 100% {
                   transform: scale(0.2) translateY(40px);
                 }
@@ -1138,7 +1148,8 @@ export default function Result({ textOne }: ResultProps) {
               </div>
               <div className="content">
                 {textWidth % 2 === 1 && <div className="blank" />}
-                <div className="slide-1">{charToRender}</div>
+                <div className="slide slide-1">{renderText(textOne)}</div>
+                <div className="slide slide-2">{renderText(textTwo)}</div>
               </div>
             </div>
           </foreignObject>
