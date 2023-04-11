@@ -112,6 +112,23 @@ export default function Result({ textOne, textTwo }: ResultProps) {
                 background: #161b22;
                 border-radius: 2px;
               }
+              .char-container {
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+              }
+              .char-container .line {
+                display: flex;
+                gap: 3px;
+              }
+              .char-container .line .box {
+                width: 11px;
+                height: 11px;
+                border-radius: 2px;
+              }
+              .char-container .line .box.active {
+                background: #3aad52;
+              }
               .content {
                 width: 100%;
                 height: 100%;
@@ -159,22 +176,29 @@ export default function Result({ textOne, textTwo }: ResultProps) {
                   opacity: 0;
                 }
               }
-              .char-container {
-                display: flex;
-                flex-direction: column;
-                gap: 3px;
+              .content .slide.slide-3 {
+                opacity: 0;
+                animation: anim-slide-3 10s infinite;
               }
-              .char-container .line {
-                display: flex;
-                gap: 3px;
+              @keyframes anim-slide-3 {
+                40.1%, 60% {
+                  opacity: 1;
+                }
+                0%, 40%, 60.1%, 100% {
+                  opacity: 0;
+                }
               }
-              .char-container .line .box {
-                width: 11px;
-                height: 11px;
-                border-radius: 2px;
+              .content .slide.slide-4 {
+                opacity: 0;
+                animation: anim-slide-4 10s infinite;
               }
-              .char-container .line .box.active {
-                background: #3aad52;
+              @keyframes anim-slide-4 {
+                60.1%, 80% {
+                  opacity: 1;
+                }
+                0%, 60%, 80.1%, 100% {
+                  opacity: 0;
+                }
               }
               `}
             </style>
@@ -188,6 +212,12 @@ export default function Result({ textOne, textTwo }: ResultProps) {
                 <div className="slide slide-2">
                   {textTwoWidth % 2 === 1 && <div className="blank" />}
                   {renderText(textTwo)}
+                </div>
+                <div className="slide slide-3">
+                  <h1 className="text-6xl font-bold text-white">Hey Clip!</h1>
+                </div>
+                <div className="slide slide-4">
+                  <h1 className="text-6xl font-bold text-white">ReadmeBox</h1>
                 </div>
               </div>
             </div>
