@@ -3,7 +3,8 @@ import Head from "next/head";
 import { useState } from "react";
 
 export default function Home() {
-  const [text, setText] = useState<string>("");
+  const [textOne, setTextOne] = useState<string>("");
+  const [textTwo, setTextTwo] = useState<string>("");
 
   return (
     <>
@@ -20,8 +21,8 @@ export default function Home() {
         <div className="min-h-[90vh] py-4">
           <h1 className="font-bold text-[28px] text-white">ReadmeBox</h1>
           <div className="flex flex-col gap-2">
-            <SearchInput text={text} setText={setText} />
-            <Result text={text} />
+            <SearchInput textOne={textOne} setTextOne={setTextOne} />
+            <Result textOne={textOne} />
           </div>
         </div>
       </main>

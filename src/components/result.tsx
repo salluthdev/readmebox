@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { A, B, D, E, H, L, S, T, U, V } from "./char";
 
 interface ResultProps {
-  text: string;
+  textOne: string;
 }
 
 interface charType {
@@ -25,11 +25,11 @@ const char: charType = {
   V: { component: <V />, width: 7 },
 };
 
-export default function Result({ text }: ResultProps) {
+export default function Result({ textOne }: ResultProps) {
   const [textWidth, setTextWidth] = useState<number>(0);
 
   // render char component based on input value
-  const charToRender = Array.from(text).map((c, index) => (
+  const charToRender = Array.from(textOne).map((c, index) => (
     <React.Fragment key={index}>
       {char[c].component}
       {c === " " && <span>&nbsp;</span>}
@@ -39,11 +39,11 @@ export default function Result({ text }: ResultProps) {
   // calc the total text width
   useEffect(() => {
     let width = 0;
-    Array.from(text).forEach((c) => {
+    Array.from(textOne).forEach((c) => {
       width += char[c].width;
     });
     setTextWidth(width);
-  }, [text]);
+  }, [textOne]);
 
   // download the svg box
   const svgRef = useRef<SVGSVGElement>(null);
