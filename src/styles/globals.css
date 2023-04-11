@@ -28,10 +28,8 @@ body {
 .char-container .line .box {
   width: 11px;
   height: 11px;
-  background: #3aad52;
   border-radius: 2px;
 }
-.char-container .line .empty-box {
-  width: 11px;
-  height: 11px;
+.char-container .line .box.active {
+  background: #3aad52;
 }
