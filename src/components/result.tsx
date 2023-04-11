@@ -26,36 +26,35 @@ const char: charType = {
   V: { component: <V />, width: 7 },
 };
 
-// render char component based on input value
-const renderText = (text: string) => {
-  return Array.from(text).map((c, index) => (
-    <React.Fragment key={index}>{char[c]?.component || c}</React.Fragment>
-  ));
-};
-
 export default function Result({ textOne, textTwo }: ResultProps) {
   const [textOneWidth, setTextOneWidth] = useState<number>(0);
   const [textTwoWidth, setTextTwoWidth] = useState<number>(0);
+  const svgRef = useRef<SVGSVGElement>(null);
+
+  // render char component based on input value
+  const renderText = (text: string) => {
+    return Array.from(text).map((c, index) => (
+      <React.Fragment key={index}>{char[c]?.component || c}</React.Fragment>
+    ));
+  };
 
   // calc the total text width
+  const calculateTextWidth = (text: string) => {
+    return Array.from(text).reduce(
+      (width, c) => width + (char[c]?.width || 0),
+      0
+    );
+  };
+
   useEffect(() => {
-    let width = 0;
-    Array.from(textOne).forEach((c) => {
-      width += char[c].width;
-    });
-    setTextOneWidth(width);
+    setTextOneWidth(calculateTextWidth(textOne));
   }, [textOne]);
 
   useEffect(() => {
-    let width = 0;
-    Array.from(textTwo).forEach((c) => {
-      width += char[c].width;
-    });
-    setTextTwoWidth(width);
+    setTextTwoWidth(calculateTextWidth(textTwo));
   }, [textTwo]);
 
   // download the svg box
-  const svgRef = useRef<SVGSVGElement>(null);
   const handleDownloadClick = () => {
     if (!svgRef.current) return;
     const svgString = new XMLSerializer().serializeToString(svgRef.current);
