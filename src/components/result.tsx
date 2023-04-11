@@ -138,6 +138,7 @@ export default function Result({ textOne, textTwo }: ResultProps) {
                 animation: anim-slide 4s infinite;
               }
               .content .slide.slide-2 {
+                opacity: 0;
                 animation: anim-slide 4s 2s infinite;
               }
               @keyframes anim-slide {
