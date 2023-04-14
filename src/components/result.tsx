@@ -193,44 +193,43 @@ export default function Result({ textOne, textTwo }: ResultProps) {
               }
               .content .slide.slide-3 {
                 opacity: 0;
-                // animation: anim-slide-3 10s infinite;
+                animation: anim-slide-3 10s infinite;
               }
               @keyframes anim-slide-3 {
-                0%, 100% {
+                0%, 40%, 100% {
                   transform: scale(0.2) translateY(40px);
+                  opacity: 0;
                 }
-                10% {
-                  transform: scale(1);
-                }
-                12%, 40% {
+                44%, 56% {
                   transform: scale(1) translateY(0);
                 }
-                44% {
+                56% {
                   opacity: 1;
                 }
-                48%, 100% {
+                60%, 100% {
                   opacity: 0;
+                }
+                80% {
+                  transform: scale(0.2) translateY(40px);
                 }
               }
               .content .slide.slide-4 {
                 opacity: 0;
-                // animation: anim-slide-4 10s infinite;
+                animation: anim-slide-4 10s infinite;
               }
               @keyframes anim-slide-4 {
-                0%, 100% {
+                0%, 80%, 100% {
                   transform: scale(0.2) translateY(40px);
+                  opacity: 0;
                 }
-                10% {
-                  transform: scale(1);
-                }
-                12%, 40% {
+                84%, 96% {
                   transform: scale(1) translateY(0);
                 }
-                44% {
+                96% {
                   opacity: 1;
                 }
-                48%, 100% {
-                  opacity: 0;
+                100% {
+                  transform: scale(1) translateY(0);
                 }
               }
               `}
@@ -247,7 +246,7 @@ export default function Result({ textOne, textTwo }: ResultProps) {
                   {renderText(textTwo)}
                 </div>
                 <div className="slide slide-3">
-                  <h1 className="text-6xl font-bold text-white">Hey Clip!</h1>
+                  <h1 className="text-6xl font-bold text-white">Hi Clip!</h1>
                 </div>
                 <div className="slide slide-4">
                   <h1 className="text-6xl font-bold text-white">ReadmeBox</h1>
