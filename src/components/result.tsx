@@ -153,13 +153,49 @@ export default function Result({ textOne, textTwo }: ResultProps) {
                 gap: 3px;
               }
               .content .slide.slide-1 {
-                animation: anim-slide 4s infinite;
+                animation: anim-slide-1 10s infinite;
+              }
+              @keyframes anim-slide-1 {
+                0%, 40%, 100% {
+                  transform: scale(0.2) translateY(40px);
+                }
+                4%, 16% {
+                  transform: scale(1) translateY(0);
+                }
+                16% {
+                  opacity: 1;
+                }
+                20%, 100% {
+                  opacity: 0;
+                }
               }
               .content .slide.slide-2 {
                 opacity: 0;
-                animation: anim-slide 4s 2s infinite;
+                animation: anim-slide-2 10s infinite;
               }
-              @keyframes anim-slide {
+              @keyframes anim-slide-2 {
+                0%, 20%, 100% {
+                  transform: scale(0.2) translateY(40px);
+                  opacity: 0;
+                }
+                24%, 36% {
+                  transform: scale(1) translateY(0);
+                }
+                36% {
+                  opacity: 1;
+                }
+                40%, 100% {
+                  opacity: 0;
+                }
+                60% {
+                  transform: scale(0.2) translateY(40px);
+                }
+              }
+              .content .slide.slide-3 {
+                opacity: 0;
+                // animation: anim-slide-3 10s infinite;
+              }
+              @keyframes anim-slide-3 {
                 0%, 100% {
                   transform: scale(0.2) translateY(40px);
                 }
@@ -176,27 +212,24 @@ export default function Result({ textOne, textTwo }: ResultProps) {
                   opacity: 0;
                 }
               }
-              .content .slide.slide-3 {
-                opacity: 0;
-                animation: anim-slide-3 10s infinite;
-              }
-              @keyframes anim-slide-3 {
-                40.1%, 60% {
-                  opacity: 1;
-                }
-                0%, 40%, 60.1%, 100% {
-                  opacity: 0;
-                }
-              }
               .content .slide.slide-4 {
                 opacity: 0;
-                animation: anim-slide-4 10s infinite;
+                // animation: anim-slide-4 10s infinite;
               }
               @keyframes anim-slide-4 {
-                60.1%, 80% {
+                0%, 100% {
+                  transform: scale(0.2) translateY(40px);
+                }
+                10% {
+                  transform: scale(1);
+                }
+                12%, 40% {
+                  transform: scale(1) translateY(0);
+                }
+                44% {
                   opacity: 1;
                 }
-                0%, 60%, 80.1%, 100% {
+                48%, 100% {
                   opacity: 0;
                 }
               }
