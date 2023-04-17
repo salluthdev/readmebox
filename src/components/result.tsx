@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { A, B, D, E, H, L, S, T, U, V } from "./char";
 import Background from "./background";
+import { DoubleCat } from "./clip";
 
 interface ResultProps {
   textOne: string;
@@ -196,21 +197,11 @@ export default function Result({ textOne, textTwo }: ResultProps) {
                 animation: anim-slide-3 10s infinite;
               }
               @keyframes anim-slide-3 {
-                0%, 40%, 100% {
-                  transform: scale(0.2) translateY(40px);
+                0%, 40%, 70%, 100% {
                   opacity: 0;
                 }
-                44%, 56% {
-                  transform: scale(1) translateY(0);
-                }
-                56% {
+                44%, 66% {
                   opacity: 1;
-                }
-                60%, 100% {
-                  opacity: 0;
-                }
-                80% {
-                  transform: scale(0.2) translateY(40px);
                 }
               }
               .content .slide.slide-4 {
@@ -218,18 +209,11 @@ export default function Result({ textOne, textTwo }: ResultProps) {
                 animation: anim-slide-4 10s infinite;
               }
               @keyframes anim-slide-4 {
-                0%, 80%, 100% {
-                  transform: scale(0.2) translateY(40px);
+                0%, 70%, 90%, 100% {
                   opacity: 0;
                 }
-                84%, 96% {
-                  transform: scale(1) translateY(0);
-                }
-                96% {
+                86% {
                   opacity: 1;
-                }
-                100% {
-                  transform: scale(1) translateY(0);
                 }
               }
               `}
@@ -246,7 +230,7 @@ export default function Result({ textOne, textTwo }: ResultProps) {
                   {renderText(textTwo)}
                 </div>
                 <div className="slide slide-3">
-                  <h1 className="text-6xl font-bold text-white">Hi Clip!</h1>
+                  <DoubleCat />
                 </div>
                 <div className="slide slide-4">
                   <h1 className="text-6xl font-bold text-white">ReadmeBox</h1>
