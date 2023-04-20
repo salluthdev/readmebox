@@ -4,16 +4,14 @@ export default function DoubleCat() {
       <style>
         {`
 				.clip-container {
-					width: 451px;
-					height: 227px;
+					width: 445px;
+					height: 221px;
 					display: flex;
 					gap: 3px;
-					background: #0d1117;
-					padding: 3px;
 				}
 				.cat-wrapper {
 					width: 221px;
-					height: 227px;
+					height: 221px;
 					display: flex;
 				}
 				.line {
@@ -23,7 +21,6 @@ export default function DoubleCat() {
 				span {
 					width: 11px;
 					height: 11px;
-					background: #161b22;
 					border-radius: 2px;
 				}
 				span:hover {
