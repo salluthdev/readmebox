@@ -9,27 +9,27 @@ export default function DoubleCat() {
 					display: flex;
 					gap: 3px;
 				}
-				.cat-wrapper {
+				.clip-container .cat-wrapper {
 					width: 221px;
 					height: 221px;
 					display: flex;
 				}
-				.line {
+        .clip-container .cat-wrapper .move {
+					display: flex;
+					flex-direction: column;
+					gap: 3px;
+				}
+				.clip-container .cat-wrapper .move .line {
 					display: flex;
 					gap: 3px;
 				}
-				span {
+				.clip-container .cat-wrapper .move .line span {
 					width: 11px;
 					height: 11px;
 					border-radius: 2px;
 				}
-				span:hover {
+				.clip-container .cat-wrapper .move .line span:hover {
 					opacity: 0.2;
-				}
-				.move {
-					display: flex;
-					flex-direction: column;
-					gap: 3px;
 				}
 				.move-1, .move-2, .move-3, .move-4, .move-5 {
 					width: 0;
