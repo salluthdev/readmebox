@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { A, B, D, E, H, L, S, T, U, V } from "./char";
 import Background from "./background";
 import { DoubleCat } from "./clip";
+import Watermark from "./watermark";
 
 interface ResultProps {
   textOne: string;
@@ -154,7 +155,7 @@ export default function Result({ textOne, textTwo }: ResultProps) {
                 gap: 3px;
               }
               .content .slide.slide-1 {
-                animation: anim-slide-1 10s infinite;
+                animation: anim-slide-1 8s infinite;
               }
               @keyframes anim-slide-1 {
                 0%, 40%, 100% {
@@ -172,7 +173,7 @@ export default function Result({ textOne, textTwo }: ResultProps) {
               }
               .content .slide.slide-2 {
                 opacity: 0;
-                animation: anim-slide-2 10s infinite;
+                animation: anim-slide-2 8s infinite;
               }
               @keyframes anim-slide-2 {
                 0%, 20%, 100% {
@@ -194,25 +195,25 @@ export default function Result({ textOne, textTwo }: ResultProps) {
               }
               .content .slide.slide-3 {
                 opacity: 0;
-                animation: anim-slide-3 10s infinite;
+                animation: anim-slide-3 8s infinite;
               }
               @keyframes anim-slide-3 {
-                0%, 40%, 70%, 100% {
+                0%, 40%, 68%, 100% {
                   opacity: 0;
                 }
-                44%, 66% {
+                44%, 64% {
                   opacity: 1;
                 }
               }
               .content .slide.slide-4 {
                 opacity: 0;
-                animation: anim-slide-4 10s infinite;
+                animation: anim-slide-4 8s infinite;
               }
               @keyframes anim-slide-4 {
-                0%, 70%, 90%, 100% {
+                0%, 68%, 88%, 100% {
                   opacity: 0;
                 }
-                86% {
+                84% {
                   opacity: 1;
                 }
               }
@@ -233,7 +234,7 @@ export default function Result({ textOne, textTwo }: ResultProps) {
                   <DoubleCat />
                 </div>
                 <div className="slide slide-4">
-                  <h1 className="text-6xl font-bold text-white">ReadmeBox</h1>
+                  <Watermark />
                 </div>
               </div>
             </div>
