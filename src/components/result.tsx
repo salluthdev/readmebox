@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { A, B, D, E, H, L, S, T, U, V } from "./char";
+import { A, D, E, H, L, S, T, U, V } from "./char";
 import Background from "./background";
 import { DoubleCat } from "./clip";
 import Watermark from "./watermark";
@@ -18,7 +18,6 @@ interface charType {
 
 const char: charType = {
   A: { component: <A />, width: 6 },
-  B: { component: <B />, width: 6 },
   D: { component: <D />, width: 6 },
   E: { component: <E />, width: 5 },
   H: { component: <H />, width: 6 },
@@ -198,10 +197,10 @@ export default function Result({ textOne, textTwo }: ResultProps) {
                 animation: anim-slide-3 8s infinite;
               }
               @keyframes anim-slide-3 {
-                0%, 40%, 68%, 100% {
+                0%, 40%, 72%, 100% {
                   opacity: 0;
                 }
-                44%, 64% {
+                44%, 68% {
                   opacity: 1;
                 }
               }
@@ -210,10 +209,10 @@ export default function Result({ textOne, textTwo }: ResultProps) {
                 animation: anim-slide-4 8s infinite;
               }
               @keyframes anim-slide-4 {
-                0%, 68%, 88%, 100% {
+                0%, 72%, 92%, 100% {
                   opacity: 0;
                 }
-                84% {
+                88% {
                   opacity: 1;
                 }
               }
