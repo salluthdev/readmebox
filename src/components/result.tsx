@@ -2,8 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { A, D, E, H, L, S, T, U, V } from "./char";
 import Background from "./background";
 import { DoubleCat } from "./clip";
-import Watermark from "./watermark";
-
+import Image from "next/image";
 interface ResultProps {
   textOne: string;
   textTwo: string;
@@ -212,7 +211,7 @@ export default function Result({ textOne, textTwo }: ResultProps) {
                 0%, 72%, 92%, 100% {
                   opacity: 0;
                 }
-                88% {
+                76%, 88% {
                   opacity: 1;
                 }
               }
@@ -233,7 +232,12 @@ export default function Result({ textOne, textTwo }: ResultProps) {
                   <DoubleCat />
                 </div>
                 <div className="slide slide-4">
-                  <Watermark />
+                  <Image
+                    src={"/svg/logo.svg"}
+                    width={137}
+                    height={137}
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
