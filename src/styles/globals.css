@@ -10,7 +10,6 @@
 body {
   font-family: "Segoe UI", sans-serif;
   background: rgb(41 37 36 / 1);
-  overflow-x: hidden;
 }
 .wrapper {
   max-width: 869px;

@@ -13,12 +13,12 @@ export default function SearchInput({
 }: SearchInputProps) {
   const inputList = [
     {
-      placeholder: "FIRST TEXT",
+      placeholder: "YOUR NAME",
       state: textOne,
       setState: setTextOne,
     },
     {
-      placeholder: "SECOND TEXT",
+      placeholder: "YOUR TITLE",
       state: textTwo,
       setState: setTextTwo,
     },

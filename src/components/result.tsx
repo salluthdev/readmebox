@@ -78,7 +78,6 @@ export default function Result({ textOne, textTwo }: ResultProps) {
           fill="none"
           viewBox="0 0 837 221"
           width={837}
-          height={221}
           xmlns="http://www.w3.org/2000/svg"
         >
           <foreignObject
@@ -144,7 +143,7 @@ export default function Result({ textOne, textTwo }: ResultProps) {
               .content .slide {
                 width: 100%;
                 height: 100%;
-                position: absolute;
+                position: fixed;
                 top: 0;
                 left: 0;
                 display: flex;
@@ -232,12 +231,7 @@ export default function Result({ textOne, textTwo }: ResultProps) {
                   <DoubleCat />
                 </div>
                 <div className="slide slide-4">
-                  <Image
-                    src={"/svg/logo.svg"}
-                    width={137}
-                    height={137}
-                    alt=""
-                  />
+                  <Image src={"/svg/logo.svg"} width={109} height={53} alt="" />
                 </div>
               </div>
             </div>
