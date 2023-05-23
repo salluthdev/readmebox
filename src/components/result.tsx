@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { A, D, E, H, L, S, T, U, V } from "./char";
+import { A, D, E, H, L, N, S, T, U, V } from "./char";
 import Background from "./background";
 import { DoubleCat } from "./clip";
 import Image from "next/image";
@@ -21,6 +21,7 @@ const char: charType = {
   E: { component: <E />, width: 5 },
   H: { component: <H />, width: 6 },
   L: { component: <L />, width: 5 },
+  N: { component: <N />, width: 7 },
   S: { component: <S />, width: 6 },
   U: { component: <U />, width: 6 },
   T: { component: <T />, width: 5 },

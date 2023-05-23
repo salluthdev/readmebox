@@ -4,8 +4,8 @@ import Image from "next/image";
 import { useState } from "react";
 
 export default function Home() {
-  const [textOne, setTextOne] = useState<string>("SALLUTH");
-  const [textTwo, setTextTwo] = useState<string>("DEV");
+  const [textOne, setTextOne] = useState<string>("NAME");
+  const [textTwo, setTextTwo] = useState<string>("TITLE");
 
   return (
     <>
