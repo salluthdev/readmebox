@@ -22,8 +22,8 @@ export default function About() {
         <div className="flex flex-col items-start gap-4 text-sm text-white">
           <Image
             src={"/svg/arrow-fun.svg"}
-            width={40}
-            height={40}
+            width={28}
+            height={28}
             alt=""
             className="-rotate-90"
           />
@@ -51,8 +51,15 @@ export default function About() {
             us. 😁
           </p>
           <Link href={"https://www.instagram.com/salluthdev/"} target="_blank">
-            <button className="font-medium bg-[#161b22] rounded py-2 px-4">
+            <button className="group flex items-center gap-3 font-medium bg-[#161b22] rounded py-2 px-4">
               Say Hello on Instagram
+              <Image
+                src={"/svg/arrow-straight.svg"}
+                width={12}
+                height={12}
+                alt=""
+                className="group-hover:scale-105 group-active:scale-95 transition rotate-90"
+              />
             </button>
           </Link>
         </div>

@@ -84,7 +84,7 @@ export default function Result({ textOne, textTwo }: ResultProps) {
           xmlns="http://www.w3.org/2000/svg"
         >
           <foreignObject
-            width="100%"
+            width="837px"
             height="100%"
             xmlns="http://www.w3.org/1999/xhtml"
           >
