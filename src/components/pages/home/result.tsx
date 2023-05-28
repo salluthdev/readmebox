@@ -242,7 +242,7 @@ export default function Result({ textOne, textTwo }: ResultProps) {
         </svg>
       </div>
       <button
-        className="font-bold underline text-white"
+        className="font-bold underline underline-offset-2 text-white"
         onClick={handleDownloadClick}
       >
         Download SVG

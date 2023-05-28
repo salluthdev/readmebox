@@ -1,5 +1,5 @@
 import { SeoMeta } from "@/components/common/seo-meta";
-import { Result, SearchInput } from "@/components/pages/app";
+import { Result, SearchInput } from "@/components/pages/home";
 import { useState } from "react";
 
 export default function Home() {
