@@ -2,6 +2,7 @@ export { default as A } from "./a";
 export { default as D } from "./d";
 export { default as E } from "./e";
 export { default as H } from "./h";
+export { default as I } from "./i";
 export { default as L } from "./l";
 export { default as M } from "./m";
 export { default as N } from "./n";

@@ -11,8 +11,3 @@ body {
   font-family: "Segoe UI", sans-serif;
   background: rgb(41 37 36 / 1);
 }
-.wrapper {
-  max-width: 869px;
-  padding: 0 16px;
-  margin: 0 auto;
-}
