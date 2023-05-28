@@ -9,8 +9,8 @@ const navbarList = [
     path: "/",
   },
   {
-    name: "About Us",
-    path: "/about-us",
+    name: "About",
+    path: "/about",
   },
 ];
 
@@ -23,7 +23,7 @@ export default function Navbar() {
   }, [router]);
 
   return (
-    <div className="flex justify-between items-center gap-2 my-4">
+    <div className="flex justify-between items-center gap-2 mt-4 mb-2">
       <div className="flex items-center gap-2">
         <Image src={"/svg/logo.svg"} width={48} height={24} alt="" />
         <h1 className="font-bold text-[28px] text-white">ReadmeBox</h1>
@@ -34,8 +34,8 @@ export default function Navbar() {
             <p
               className={`${
                 activePage === list.path
-                  ? "text-green-400 underline"
-                  : "text-white"
+                  ? "font-bold text-green-400 underline"
+                  : "font-medium text-white"
               } hover:underline underline-offset-2 cursor-pointer`}
               onClick={() => setActivePage(list.path)}
             >
@@ -43,8 +43,8 @@ export default function Navbar() {
             </p>
           </Link>
         ))}
-        <div className="group bg-[#161b22] rounded-lg py-2 px-4 cursor-pointer">
-          <div className="flex items-center gap-1">
+        <Link href={"https://github.com/salluthdev/readmebox"} target="_blank">
+          <div className="group flex items-center gap-2 bg-[#161b22] rounded-lg py-2 px-4 cursor-pointer">
             <Image
               src={"/svg/star.svg"}
               width={16}
@@ -54,7 +54,7 @@ export default function Navbar() {
             />
             <p>12</p>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );
