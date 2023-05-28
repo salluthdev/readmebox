@@ -16,11 +16,19 @@ const navbarList = [
 
 export default function Navbar() {
   const [activePage, setActivePage] = useState<string>(navbarList[0].path);
+  const [githubStars, setGithubStars] = useState<number>(0);
   const router = useRouter();
 
   useEffect(() => {
     setActivePage(router.pathname);
   }, [router]);
+
+  // counting github's stars
+  useEffect(() => {
+    fetch("https://api.github.com/repos/salluthdev/readmebox")
+      .then((res) => res.json())
+      .then((data) => setGithubStars(data.stargazers_count));
+  }, []);
 
   return (
     <div className="flex justify-between items-center gap-2 mt-4 mb-2">
@@ -52,7 +60,7 @@ export default function Navbar() {
               alt=""
               className="group-hover:scale-105 group-active:scale-95 transition"
             />
-            <p>12</p>
+            <p>{githubStars}</p>
           </div>
         </Link>
       </div>
