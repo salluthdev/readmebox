@@ -1,8 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { A, D, E, H, I, L, M, N, S, T, U, V } from "./char";
-import Background from "./background";
-import { DoubleCat } from "./clip";
-import Image from "next/image";
+import { Background, DoubleCat, Logo } from "./result-components";
 interface ResultProps {
   textOne: string;
   textTwo: string;
@@ -234,7 +232,7 @@ export default function Result({ textOne, textTwo }: ResultProps) {
                   <DoubleCat />
                 </div>
                 <div className="slide slide-4">
-                  <Image src={"/svg/logo.svg"} width={109} height={53} alt="" />
+                  <Logo />
                 </div>
               </div>
             </div>

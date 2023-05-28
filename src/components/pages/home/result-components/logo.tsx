@@ -1,0 +1,43 @@
+export default function Logo() {
+  return (
+    <svg
+      width="109"
+      height="53"
+      viewBox="0 0 109 53"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect x="14" width="11" height="11" rx="2" fill="#3AAD52" />
+      <rect x="28" width="11" height="11" rx="2" fill="#3AAD52" />
+      <rect x="42" width="11" height="11" rx="2" fill="#3AAD52" />
+      <rect x="56" width="11" height="11" rx="2" fill="#3AAD52" />
+      <rect x="70" width="11" height="11" rx="2" fill="#3AAD52" />
+      <rect x="84" width="11" height="11" rx="2" fill="#3AAD52" />
+      <rect y="14" width="11" height="11" rx="2" fill="#3AAD52" />
+      <rect x="14" y="14" width="11" height="11" rx="2" fill="#3AAD52" />
+      <path
+        d="M28 16C28 14.8954 28.8954 14 30 14H37C38.1046 14 39 14.8954 39 16V23C39 24.1046 38.1046 25 37 25H30C28.8954 25 28 24.1046 28 23V16Z"
+        fill="#1B4332"
+      />
+      <rect x="42" y="14" width="11" height="11" rx="2" fill="#3AAD52" />
+      <rect x="56" y="14" width="11" height="11" rx="2" fill="#3AAD52" />
+      <rect x="70" y="14" width="11" height="11" rx="2" fill="#1B4332" />
+      <rect x="84" y="14" width="11" height="11" rx="2" fill="#3AAD52" />
+      <rect x="98" y="14" width="11" height="11" rx="2" fill="#3AAD52" />
+      <rect y="28" width="11" height="11" rx="2" fill="#3AAD52" />
+      <rect x="14" y="28" width="11" height="11" rx="2" fill="#3AAD52" />
+      <rect x="28" y="28" width="11" height="11" rx="2" fill="#3AAD52" />
+      <rect x="42" y="28" width="11" height="11" rx="2" fill="#1B4332" />
+      <rect x="56" y="28" width="11" height="11" rx="2" fill="#1B4332" />
+      <rect x="70" y="28" width="11" height="11" rx="2" fill="#3AAD52" />
+      <rect x="84" y="28" width="11" height="11" rx="2" fill="#3AAD52" />
+      <rect x="98" y="28" width="11" height="11" rx="2" fill="#3AAD52" />
+      <rect x="14" y="42" width="11" height="11" rx="2" fill="#3AAD52" />
+      <rect x="28" y="42" width="11" height="11" rx="2" fill="#3AAD52" />
+      <rect x="42" y="42" width="11" height="11" rx="2" fill="#3AAD52" />
+      <rect x="56" y="42" width="11" height="11" rx="2" fill="#3AAD52" />
+      <rect x="70" y="42" width="11" height="11" rx="2" fill="#3AAD52" />
+      <rect x="84" y="42" width="11" height="11" rx="2" fill="#3AAD52" />
+    </svg>
+  );
+}
