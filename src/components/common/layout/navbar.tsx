@@ -44,7 +44,7 @@ export default function Navbar() {
           </Link>
         ))}
         <Link href={"https://github.com/salluthdev/readmebox"} target="_blank">
-          <div className="group flex items-center gap-2 bg-[#161b22] rounded-lg py-2 px-4 cursor-pointer">
+          <div className="group flex items-center gap-2 bg-[#161b22] rounded py-2 px-4 cursor-pointer">
             <Image
               src={"/svg/star.svg"}
               width={16}
