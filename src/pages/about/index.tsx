@@ -20,6 +20,13 @@ export default function About() {
           />
         </Link>
         <div className="flex flex-col items-start gap-4 text-sm text-white">
+          <Image
+            src={"/svg/arrow-fun.svg"}
+            width={40}
+            height={40}
+            alt=""
+            className="-rotate-90"
+          />
           <p>
             Inspired by this post,{" "}
             <Link
@@ -37,10 +44,11 @@ export default function About() {
             >
               @amienulrana
             </Link>{" "}
-            to help him make some components. Thank you Amien!
+            to help him make some components. Thank you Amien! 🙏
           </p>
           <p>
-            Do you have another cool project idea? Let&apos;s discuss with us.
+            Do you have another cool project idea? 🤔 Let&apos;s discuss with
+            us. 😁
           </p>
           <Link href={"https://www.instagram.com/salluthdev/"} target="_blank">
             <button className="font-medium bg-[#161b22] rounded py-2 px-4">
