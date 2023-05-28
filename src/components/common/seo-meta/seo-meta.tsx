@@ -14,7 +14,7 @@ export default function SeoMeta({ title }: SeoMetaProps) {
       <title>{pageTitle}</title>
       <meta name="description" content="Make Your Github Cool with SVG Boxes" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/svg/logo.svg" />
     </Head>
   );
 }
