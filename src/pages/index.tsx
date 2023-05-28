@@ -1,5 +1,5 @@
+import { SeoMeta } from "@/components/common/seo-meta";
 import { Result, SearchInput } from "@/components/pages/app";
-import Head from "next/head";
 import { useState } from "react";
 
 export default function Home() {
@@ -8,15 +8,7 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>ReadmeBox - Make Your Github Cool with SVG Boxes</title>
-        <meta
-          name="description"
-          content="Make Your Github Cool with SVG Boxes"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <SeoMeta />
       <div className="flex flex-col gap-2">
         <SearchInput
           textOne={textOne}
