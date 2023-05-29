@@ -38,13 +38,13 @@ export default function About() {
             </Link>{" "}
             started this project. He also asked his partner{" "}
             <Link
-              href={"https://github.com/amienulrana"}
+              href={""}
               target="_blank"
               className="font-bold underline underline-offset-2 text-green-400"
             >
-              @amienulrana
+              @thepartner
             </Link>{" "}
-            to help him make some components. Thank you Amien! 🙏
+            to help him make some components. Thank you @thepartner! 🙏
           </p>
           <p>
             Do you have another cool project idea? 🤔 Let&apos;s discuss with
