@@ -6,7 +6,7 @@ export default function About() {
   return (
     <>
       <SeoMeta title="About" />
-      <div className="flex max-sm:flex-col gap-4 mt-10">
+      <div className="flex max-sm:flex-col gap-4 mt-10 max-sm:mt-4">
         <Link
           href={"https://twitter.com/github/status/1618309004362407937"}
           target="_blank"
