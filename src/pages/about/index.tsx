@@ -13,19 +13,19 @@ export default function About() {
         >
           <Image
             src={"/img/twitter-github.png"}
-            width={280}
-            height={280}
+            width={140}
+            height={140}
             alt=""
             className="rounded active:scale-95 transition cursor-pointer"
           />
         </Link>
-        <div className="flex flex-col items-start gap-4 text-sm text-white">
+        <div className="flex-1 flex flex-col items-start gap-4 text-sm text-white">
           <Image
             src={"/svg/arrow-fun.svg"}
             width={28}
             height={28}
             alt=""
-            className="-rotate-90"
+            className="max-sm:hidden -rotate-90"
           />
           <p>
             Inspired by this post,{" "}
