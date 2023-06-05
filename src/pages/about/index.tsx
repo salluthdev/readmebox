@@ -36,15 +36,10 @@ export default function About() {
             >
               @salluthdev
             </Link>{" "}
-            started this project. He also asked his partner{" "}
-            <Link
-              href={""}
-              target="_blank"
-              className="font-bold underline underline-offset-2 text-green-400"
-            >
-              @thepartner
-            </Link>{" "}
-            to help him make some components. Thank you @thepartner! 🙏
+            started this project. The idea is to create an svg genenator to cool
+            your github readme. You don&apos;t neet to waste your time on
+            coding, let me do the work. You just enter the text you want to
+            display. 😎
           </p>
           <p>
             Do you have another cool project idea? 🤔 Let&apos;s discuss with
