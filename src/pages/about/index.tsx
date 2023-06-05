@@ -43,7 +43,7 @@ export default function About() {
           </p>
           <p>
             Do you have another cool project idea? 🤔 Let&apos;s discuss with
-            us. 😁
+            me. 😁
           </p>
           <Link href={"https://www.instagram.com/salluthdev/"} target="_blank">
             <button className="group flex items-center gap-3 font-medium bg-[#161b22] rounded py-2 px-4">
