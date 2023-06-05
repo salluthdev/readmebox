@@ -73,7 +73,7 @@ export default function Result({ textOne, textTwo }: ResultProps) {
 
   return (
     <>
-      <div className="flex bg-[#0d1117] rounded p-[3px]">
+      <div className="flex bg-[#0d1117] rounded p-[3px] max-sm:p-[2px]">
         <svg
           ref={svgRef}
           fill="none"
