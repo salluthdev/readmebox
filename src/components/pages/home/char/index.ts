@@ -1,5 +1,6 @@
 export { default as A } from "./a";
 export { default as B } from "./b";
+export { default as C } from "./c";
 export { default as D } from "./d";
 export { default as E } from "./e";
 export { default as H } from "./h";
