@@ -15,6 +15,7 @@ export { default as N } from "./n";
 export { default as O } from "./o";
 export { default as P } from "./p";
 export { default as Q } from "./q";
+export { default as R } from "./r";
 export { default as S } from "./s";
 export { default as T } from "./t";
 export { default as U } from "./u";
