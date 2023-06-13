@@ -13,6 +13,7 @@ export { default as L } from "./l";
 export { default as M } from "./m";
 export { default as N } from "./n";
 export { default as O } from "./o";
+export { default as P } from "./p";
 export { default as S } from "./s";
 export { default as T } from "./t";
 export { default as U } from "./u";
