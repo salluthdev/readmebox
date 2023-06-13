@@ -20,3 +20,4 @@ export { default as S } from "./s";
 export { default as T } from "./t";
 export { default as U } from "./u";
 export { default as V } from "./v";
+export { default as W } from "./w";
