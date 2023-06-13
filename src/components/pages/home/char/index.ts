@@ -8,6 +8,7 @@ export { default as G } from "./g";
 export { default as H } from "./h";
 export { default as I } from "./i";
 export { default as J } from "./j";
+export { default as K } from "./k";
 export { default as L } from "./l";
 export { default as M } from "./m";
 export { default as N } from "./n";

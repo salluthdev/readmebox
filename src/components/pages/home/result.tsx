@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { A, B, C, D, E, F, G, H, I, J, L, M, N, S, T, U, V } from "./char";
+import { A, B, C, D, E, F, G, H, I, J, K, L, M, N, S, T, U, V } from "./char";
 import { Background, DoubleCat, Logo } from "./result-components";
 interface ResultProps {
   textOne: string;
@@ -24,6 +24,7 @@ const char: charType = {
   H: { component: <H />, width: 6 },
   I: { component: <I />, width: 3 },
   J: { component: <J />, width: 3 },
+  K: { component: <K />, width: 7 },
   L: { component: <L />, width: 5 },
   M: { component: <M />, width: 8 },
   N: { component: <N />, width: 7 },
