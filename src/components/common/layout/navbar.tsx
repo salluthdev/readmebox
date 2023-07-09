@@ -32,14 +32,16 @@ export default function Navbar() {
 
   return (
     <div className="flex justify-between items-center flex-wrap gap-4 mt-4 mb-2">
-      <div className="flex items-center gap-2">
-        <div className="w-12 max-sm:w-10 h-6 relative">
-          <Image src={"/svg/logo.svg"} fill alt="" />
+      <Link href={"/"}>
+        <div className="flex items-center gap-2">
+          <div className="w-12 max-sm:w-10 h-6 relative">
+            <Image src={"/svg/logo.svg"} fill alt="" />
+          </div>
+          <h1 className="max-sm:hidden font-bold text-[28px] text-white">
+            ReadmeBox
+          </h1>
         </div>
-        <h1 className="max-sm:hidden font-bold text-[28px] text-white">
-          ReadmeBox
-        </h1>
-      </div>
+      </Link>
       <div className="flex-1 flex justify-end items-center gap-6 font-medium text-white">
         {navbarList.map((list) => (
           <Link key={list.name} href={list.path}>
