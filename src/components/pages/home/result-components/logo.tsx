@@ -65,20 +65,16 @@ export default function Logo() {
           top: 28px;
           right: 42px;
         }
-        .logo-clip-container .decoration.decoration-1 .pattern-1 {
+        .logo-clip-container .decoration.decoration-1 .pattern-1,
+        .logo-clip-container .decoration.decoration-4 .pattern-1 {
           animation: anim-pattern-1 0.6s infinite;
         }
-        .logo-clip-container .decoration.decoration-2 .pattern-1 {
+        .logo-clip-container .decoration.decoration-2 .pattern-1,
+        .logo-clip-container .decoration.decoration-5 .pattern-1 {
           animation: anim-pattern-1 0.6s 0.4s infinite;
         }
         .logo-clip-container .decoration.decoration-3 .pattern-1 {
           animation: anim-pattern-1 0.6s 0.2s infinite;
-        }
-        .logo-clip-container .decoration.decoration-4 .pattern-1 {
-          animation: anim-pattern-1 0.6s infinite;
-        }
-        .logo-clip-container .decoration.decoration-5 .pattern-1 {
-          animation: anim-pattern-1 0.6s 0.4s infinite;
         }
         @keyframes anim-pattern-1 {
           0%, 50% {
@@ -88,20 +84,16 @@ export default function Logo() {
             opacity: 0;
           }
         }
-        .logo-clip-container .decoration.decoration-1 .pattern-2 {
+        .logo-clip-container .decoration.decoration-1 .pattern-2,
+        .logo-clip-container .decoration.decoration-4 .pattern-2 {
           animation: anim-pattern-2 0.6s infinite;
         }
-        .logo-clip-container .decoration.decoration-2 .pattern-2 {
+        .logo-clip-container .decoration.decoration-2 .pattern-2,
+        .logo-clip-container .decoration.decoration-5 .pattern-2 {
           animation: anim-pattern-2 0.6s 0.4s infinite;
         }
         .logo-clip-container .decoration.decoration-3 .pattern-2 {
           animation: anim-pattern-2 0.6s 0.2s infinite;
-        }
-        .logo-clip-container .decoration.decoration-4 .pattern-2 {
-          animation: anim-pattern-2 0.6s infinite;
-        }
-        .logo-clip-container .decoration.decoration-5 .pattern-2 {
-          animation: anim-pattern-2 0.6s 0.4s infinite;
         }
         @keyframes anim-pattern-2 {
           0%, 50% {
