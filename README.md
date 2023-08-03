@@ -9,3 +9,8 @@ Let your creativity shine and showcase your projects like a pro! Start crafting 
 
 ## Tech Stack
 `Next JS` `Tailwind CSS`
+
+## About
+Inspired by this post, @salluthdev started this project. The idea is to create an svg genenator to cool your github readme. You don't neet to waste your time on coding, let me do the work. You just enter the text you want to display. 😎
+
+Do you have another cool project idea? 🤔 Let's discuss with me. 😁
