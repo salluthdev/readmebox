@@ -1,38 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ReadmeBox - Make Your Github Cool with SVG Boxes
+Hi Github user! Want to create a cool @github readme without coding? 🚀 Check out this awesome app, ReadmeBox! 🎉
 
-## Getting Started
+Let your creativity shine and showcase your projects like a pro! Start crafting your unique readme now at [https://readmebox.com/](https://readmebox.com/) 📝
 
-First, run the development server:
+## Preview
+![image](https://github.com/salluthdev/readmebox/assets/83701344/a60df519-c0ce-49bd-b7d4-214b705fb7e8)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
+`Next JS` `TypeScript` `Tailwind CSS`
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## About
+Inspired by [this](https://twitter.com/github/status/1618309004362407937) post, [@salluthdev](https://twitter.com/github/status/1618309004362407937) started this project. The idea is to create an svg genenator to cool your github readme. You don't neet to waste your time on coding, let me do the work. You just enter the text you want to display. 😎
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Do you have another cool project idea? 🤔 Let's discuss with me. 😁
