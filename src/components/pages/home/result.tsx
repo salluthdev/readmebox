@@ -23,6 +23,7 @@ import {
   U,
   V,
   W,
+  X,
 } from "./char";
 import { Background, DoubleCat, Logo } from "./result-components";
 interface ResultProps {
@@ -61,6 +62,7 @@ const char: charType = {
   T: { component: <T />, width: 5 },
   V: { component: <V />, width: 7 },
   W: { component: <W />, width: 9 },
+  X: { component: <X />, width: 8 },
 };
 
 export default function Result({ textOne, textTwo }: ResultProps) {

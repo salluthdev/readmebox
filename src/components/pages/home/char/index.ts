@@ -21,3 +21,4 @@ export { default as T } from "./t";
 export { default as U } from "./u";
 export { default as V } from "./v";
 export { default as W } from "./w";
+export { default as X } from "./x";
